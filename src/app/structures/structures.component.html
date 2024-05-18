@@ -1,0 +1,5 @@
+<input type="text" [(ngModel)] = "name">
+
+<p *ngIf = "name === 'admin'">Hello {{name}}</p>
+<p *ngIf = "name === ''">Enter your name</p>
+<p *ngIf = "name != 'admin'">Incorrect Record</p>
