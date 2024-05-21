@@ -1,5 +1,19 @@
-<input type="text" [(ngModel)] = "name">
 
-<p *ngIf = "name === 'admin'">Hello {{name}}</p>
-<p *ngIf = "name === ''">Enter your name</p>
-<p *ngIf = "name != 'admin'">Incorrect Record</p>
+<p *ngFor = "let item of cityNames">{{item}}</p>
+
+<!-- <p *ngIf="name != ''; then ifBlock else elseBlock"></p>
+
+<ng-template #ifBlock>
+    <h3>Welcome {{name}}</h3>
+</ng-template>
+
+<ng-template #elseBlock>
+    <h3>Enter any Name..</h3>
+</ng-template> -->
+<!-- 
+<div [ngSwitch] = "name">
+    <p *ngSwitchCase = "'Neelam'">Faculty</p>
+    <p *ngSwitchCase = "'Wajeeha'">Coordinator</p>
+    <p *ngSwitchCase = "'Rafia'">Student</p>
+    <p *ngSwitchDefault>Undefined</p>
+</div> -->

@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './structures.component.css'
 })
 export class StructuresComponent {
- name = '';
+  cityNames = ['Karachi' , 'Islamabad' , 'Lahore'];
 }
