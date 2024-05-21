@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './structures.component.css'
 })
 export class StructuresComponent {
-  cityNames = ['Karachi' , 'Islamabad' , 'Lahore'];
+  cityRecords = [
+    {Id : 101 , Name : 'Karachi' , FamousPlace  : 'Mazar -e- Quaid'},
+    {Id : 102 , Name : 'Islamabad' , FamousPlace  : 'Shah Faisal Mosque'},
+    {Id : 103 , Name : 'Lahore' , FamousPlace  : 'Minaer -e- Pakistan'},
+  ];
 }

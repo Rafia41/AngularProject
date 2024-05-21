@@ -1,5 +1,5 @@
 
-<p *ngFor = "let item of cityNames">{{item}}</p>
+<!-- <p *ngFor = "let item of cityNames">{{item}}</p> -->
 
 <!-- <p *ngIf="name != ''; then ifBlock else elseBlock"></p>
 
@@ -17,3 +17,24 @@
     <p *ngSwitchCase = "'Rafia'">Student</p>
     <p *ngSwitchDefault>Undefined</p>
 </div> -->
+
+<table class="table">
+    <thead>
+      <tr>
+    
+        <th scope="col">City Code</th>
+        <th scope="col">City Name</th>
+        <th scope="col">Famous Place</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let city of cityRecords">
+
+        <td>{{city.Id}}</td>
+        <td>{{city.Name}}</td>
+        <td>{{city.FamousPlace}}</td>
+        
+      </tr>
+    </tbody>
+  </table>
